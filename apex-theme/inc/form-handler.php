@@ -50,7 +50,7 @@ function apex_process_contact_form() {
     wp_redirect($whatsapp_url);
     exit;
 }
-Add_action('admin_post_apex_contact_form_submission', 'apex_process_contact_form');
+add_action('admin_post_apex_contact_form_submission', 'apex_process_contact_form');
 add_action('admin_post_nopriv_apex_contact_form_submission', 'apex_process_contact_form');
 
 /**

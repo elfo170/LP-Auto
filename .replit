@@ -2,6 +2,7 @@ modules = ["nodejs-20", "python-3.11", "php-8.1"]
 
 [nix]
 channel = "stable-24_05"
+packages = ["zip"]
 
 [workflows]
 runButton = "Project"
@@ -13,15 +14,15 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Web Server"
+args = "WordPress Theme Demo"
 
 [[workflows.workflow]]
-name = "Web Server"
+name = "WordPress Theme Demo"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "python -m http.server 5000"
+args = "cd apex-theme && php -S 0.0.0.0:5000"
 waitForPort = 5000
 
 [deployment]
