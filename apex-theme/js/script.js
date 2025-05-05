@@ -3,67 +3,77 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     
-    menuToggle.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
-    });
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+    }
     
     // Close menu when clicking on a nav link
     const navItems = document.querySelectorAll('.nav-links a');
     navItems.forEach(item => {
         item.addEventListener('click', function() {
-            navLinks.classList.remove('active');
-            document.body.classList.remove('menu-open');
+            if (navLinks) {
+                navLinks.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
         });
     });
     
     // Sticky Header
     const header = document.querySelector('header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+    if (header) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    }
     
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
-        question.addEventListener('click', function() {
-            const isActive = item.classList.contains('active');
-            
-            // Close all FAQs
-            faqItems.forEach(faq => {
-                faq.classList.remove('active');
+        if (question) {
+            question.addEventListener('click', function() {
+                const isActive = item.classList.contains('active');
+                
+                // Close all FAQs
+                faqItems.forEach(faq => {
+                    faq.classList.remove('active');
+                });
+                
+                // If it wasn't active before, open it
+                if (!isActive) {
+                    item.classList.add('active');
+                }
             });
-            
-            // If it wasn't active before, open it
-            if (!isActive) {
-                item.classList.add('active');
-            }
-        });
+        }
     });
     
     // Back to Top Button
     const backToTopButton = document.querySelector('.back-to-top');
     
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 300) {
-            backToTopButton.classList.add('active');
-        } else {
-            backToTopButton.classList.remove('active');
-        }
-    });
-    
-    backToTopButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    if (backToTopButton) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('active');
+            } else {
+                backToTopButton.classList.remove('active');
+            }
         });
-    });
+        
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
     
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -75,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                const headerHeight = document.querySelector('header').offsetHeight;
+                const headerHeight = document.querySelector('header')?.offsetHeight || 0;
                 const targetPosition = targetElement.offsetTop - headerHeight;
                 
                 window.scrollTo({
@@ -91,13 +101,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+            // We don't preventDefault() here because we want the form to submit to WordPress
+            // But we still validate the form fields
             
             // Get form fields
             const name = document.getElementById('name');
             const phone = document.getElementById('phone');
             const company = document.getElementById('company');
-            const industry = document.getElementById('industry');
+            const niche = document.getElementById('niche');
             const revenue = document.getElementById('revenue');
             
             // Reset errors
@@ -124,8 +135,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 isValid = false;
             }
             
-            if (!industry.value.trim()) {
-                showError(industry, 'industryError', 'Por favor, informe o nicho da sua empresa');
+            if (!niche.value.trim()) {
+                showError(niche, 'nicheError', 'Por favor, informe o nicho da sua empresa');
                 isValid = false;
             }
             
@@ -134,19 +145,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 isValid = false;
             }
             
-            // If form is valid, redirect to WhatsApp
-            if (isValid) {
-                const nameValue = encodeURIComponent(name.value.trim());
-                const phoneValue = encodeURIComponent(phone.value.trim());
-                const companyValue = encodeURIComponent(company.value.trim());
-                const industryValue = encodeURIComponent(industry.value.trim());
-                const revenueValue = encodeURIComponent(revenue.value.trim());
-                
-                const message = `Olá! Vim do site e gostaria de entender como automações com IA podem ajudar o meu negócio.\n\nNome: ${nameValue}\nTelefone: ${phoneValue}\nEmpresa: ${companyValue}\nNicho: ${industryValue}\nFaturamento Mensal: ${revenueValue}`;
-                
-                const whatsappURL = `https://wa.me/5531995306257?text=${encodeURIComponent(message)}`;
-                
-                window.location.href = whatsappURL;
+            // If form is not valid, prevent submission
+            if (!isValid) {
+                e.preventDefault();
             }
         });
     }
