@@ -126,26 +126,30 @@ img {
 
 .secondary-btn {
     background-color: transparent;
-    color: var(--primary);
-    border: 2px solid var(--primary);
+    color: var(--light);
+    border: 2px solid var(--light);
 }
 
 .secondary-btn:hover {
-    background-color: var(--primary);
-    color: var(--light);
+    background-color: var(--light);
+    color: var(--primary);
 }
 
 /* Header & Navigation */
 header {
-    background-color: var(--light);
+    background-color: var(--primary);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     padding: 1rem 0;
     transition: var(--transition);
+}
+
+header .nav-links a {
+    color: var(--light);
 }
 
 header .container {
@@ -161,6 +165,7 @@ header .container {
 .logo img {
     height: 40px;
     width: auto;
+    filter: brightness(0) invert(1);
 }
 
 .logo-icon {
@@ -205,6 +210,19 @@ nav {
 
 .cta-button a {
     padding: 0.6rem 1.2rem;
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.header .cta-button a {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.header .cta-button a:hover {
+    background-color: var(--primary);
+    color: var(--light);
 }
 
 .menu-toggle {
@@ -290,6 +308,19 @@ section {
     background-color: var(--light);
 }
 
+.value-proposition .btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+
+.value-proposition .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 .card-container {
     display: flex;
     gap: 2rem;
@@ -362,6 +393,19 @@ section {
 /* Customer Experience Section */
 .customer-experience {
     background-color: var(--light);
+}
+
+.customer-experience .btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+
+.customer-experience .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .section-intro {
