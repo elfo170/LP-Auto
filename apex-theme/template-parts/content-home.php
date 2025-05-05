@@ -1,0 +1,355 @@
+<?php
+/**
+ * Template part for displaying home page content
+ */
+?>
+
+<!-- Seção 1 - Hero -->
+<section id="section1" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>A Revolução das Automações com IA ao seu Alcance</h1>
+            <h2>Bem-vindo ao Futuro da Performance Empresarial</h2>
+            <p>Você está pronto para transformar sua empresa, elevar a eficiência operacional e conquistar resultados extraordinários usando o que há de mais moderno em tecnologia?</p>
+            <p>Na Apex Marketing Digital, implementamos Automações com IA para empresas que não querem só crescer: querem dominar seus mercados.</p>
+            <a href="#section11" class="btn primary-btn">Entre em contato agora!</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1699602050604-698045645108" alt="Conceito de Tecnologia IA" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<!-- Seção 2 - O que são Automações com IA -->
+<section id="section2" class="what-is-ai">
+    <div class="container">
+        <h2>O que são Automações com IA?</h2>
+        <div class="content-wrapper">
+            <div class="text-content">
+                <p>Automações com Inteligência Artificial são sistemas inteligentes que executam tarefas repetitivas, processos complexos e análises avançadas automaticamente. Eles aprendem, se aperfeiçoam e otimizam cada etapa do seu negócio, tirando o melhor proveito dos dados para tomar decisões mais assertivas.</p>
+                <p>Deixe a IA trabalhar por você e sua equipe foca no que realmente importa: estratégias, criatividade e crescimento!</p>
+                <a href="#section11" class="btn primary-btn">Quero automatizar meu negócio</a>
+            </div>
+            <div class="image-content">
+                <img src="https://images.unsplash.com/photo-1646583288948-24548aedffd8" alt="Conceito de Automação IA" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 3 - Revolucione a Tomada de Decisão -->
+<section id="section3" class="decision-making">
+    <div class="container">
+        <h2>Revolucione a Tomada de Decisão Estratégica</h2>
+        <div class="content-wrapper reverse">
+            <div class="image-content">
+                <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" alt="Tecnologia avançada de IA" loading="lazy">
+            </div>
+            <div class="text-content">
+                <p>Imagine ter acesso a insights valiosos e relatórios completos sobre mercado, concorrência, performance de campanhas e comportamento do público. Identifique oportunidades e riscos antes da concorrência, tomando decisões mais informadas e precisas.</p>
+                <a href="#section11" class="btn primary-btn">Quero dados para decisões melhores</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 4 - Proposta de Valor Única -->
+<section id="section4" class="value-proposition">
+    <div class="container">
+        <h2>Nossa Proposta Única de Valor</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Redução Elevada de Custos Operacionais</h3>
+                <ul>
+                    <li>Mais eficiência com menos tarefas manuais</li>
+                    <li>Processos 24 horas por dia e 7 dias por semana</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Economia de Tempo e Dinheiro</h3>
+                <ul>
+                    <li>Processos que levariam horas (ou dias!) acontecem em minutos</li>
+                    <li>Sua equipe concentrada em crescimento, não em tarefas operacionais</li>
+                </ul>
+            </div>
+        </div>
+        <div class="highlight-box">
+            <h3>Fique na Frente. Não fique para trás.</h3>
+            <p>Enquanto muitos estão pensando em IA, seus concorrentes podem estar usando IA AGORA. Não seja o último!</p>
+            <a href="#section11" class="btn primary-btn">Quero estar à frente</a>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 5 - Comunicação Integrada -->
+<section id="section5" class="integrated-communication">
+    <div class="container">
+        <h2>Comunicação Integrada e Omnichannel</h2>
+        <div class="content-wrapper">
+            <div class="text-content">
+                <ul class="feature-list">
+                    <li>
+                        <i class="fas fa-comments"></i>
+                        <p>Unifique todos os pontos de contato: WhatsApp, E-mail, Chat, Redes Sociais e mais.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-database"></i>
+                        <p>Centralize as interações no seu CRM, com histórico completo automaticamente.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-user-friends"></i>
+                        <p>Personalize o relacionamento e surpreenda o cliente em todos os canais.</p>
+                    </li>
+                </ul>
+                <a href="#section11" class="btn primary-btn">Quero um atendimento integrado</a>
+            </div>
+            <div class="image-content">
+                <img src="https://images.unsplash.com/photo-1517702087178-fa967a8e8169" alt="Atendimento integrado" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 6 - Experiência do Cliente -->
+<section id="section6" class="customer-experience">
+    <div class="container">
+        <h2>Eleve a Experiência do Cliente a Outro Patamar</h2>
+        <p class="section-intro">Clientes querem respostas rápidas, personalizadas e atendimento 24 horas por dia e 7 dias por semana. Com IA, você entrega isso e muito mais!</p>
+        
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-robot"></i>
+                <h3>Chatbots Inteligentes e Multicanal</h3>
+                <p>Atendimento ágil e natural em todos os canais (WhatsApp, Messenger, site…)</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-paper-plane"></i>
+                <h3>Disparos automáticos de comunicação</h3>
+                <p>E-mails, mensagens e notificações enviados no melhor momento para cada cliente.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-edit"></i>
+                <h3>Geração de conteúdo personalizado</h3>
+                <p>Posts para redes sociais, blog, e newsletters feitos sob medida, com a linguagem e o timing perfeitos.</p>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <h3>Menos Erros, Zero Retrabalho: Mais Tempo para Crescer</h3>
+            <p>A automação elimina falhas humanas, retrabalhos, perdas por processos manuais e todo risco desnecessário.</p>
+            <a href="#section11" class="btn primary-btn">Quero melhorar a experiência dos meus clientes</a>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 7 - Integração com CRM -->
+<section id="section7" class="crm-integration">
+    <div class="container">
+        <div class="content-wrapper reverse">
+            <div class="image-content">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Integração com CRM" loading="lazy">
+            </div>
+            <div class="text-content">
+                <ul class="feature-list">
+                    <li>
+                        <i class="fas fa-sync-alt"></i>
+                        <p>Integração com CRM: cadastros, follow-ups, notas e históricos alimentados automaticamente.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-cogs"></i>
+                        <p>Automação de processos: fluxo de vendas, contratos, pedidos e atendimentos sem perder nenhuma etapa.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-file-alt"></i>
+                        <p>Processamento de documentos e preenchimento de contratos: 100% digital, seguro e sem erros de digitação.</p>
+                    </li>
+                </ul>
+                <a href="#section11" class="btn primary-btn">Quero automatizar meu CRM</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 8 - Nossas Soluções -->
+<section id="section8" class="our-solutions">
+    <div class="container">
+        <h2>Algumas de nossas Soluções</h2>
+        <div class="solutions-grid">
+            <div class="solution-item">
+                <i class="fas fa-search"></i>
+                <h3>Web Scraping</h3>
+                <p>Capte oportunidades e tendências da internet em tempo real</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-headset"></i>
+                <h3>Atendimento Multicanal</h3>
+                <p>Chatbots e voicebots com atendimento 100% do tempo, além de disparos de comunicação</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Relatórios automatizados</h3>
+                <p>Decida com base em análises profundas, e não em achismos</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-users"></i>
+                <h3>Integração com CRM</h3>
+                <p>Vendas, pós-venda, SAC todo automatizado</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-brain"></i>
+                <h3>RAG</h3>
+                <p>Respostas e sugestões usando dados internos e externos</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-pencil-alt"></i>
+                <h3>Geração de Conteúdo</h3>
+                <p>Social media, blog, newsletters e mais</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-file-invoice"></i>
+                <h3>Processamento de documentos</h3>
+                <p>Formularios, contratos e notas com preenchimento automático</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-microphone-alt"></i>
+                <h3>Transcrição de reuniões</h3>
+                <p>Transcrição e resumos automáticos com destaque para ações</p>
+            </div>
+        </div>
+        <div class="cta-center">
+            <a href="#section11" class="btn primary-btn">Quero conhecer mais soluções</a>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 9 - O Momento é Agora -->
+<section id="section9" class="moment-is-now">
+    <div class="container">
+        <h2>O MOMENTO É AGORA!</h2>
+        <p>Quem adere à IA primeiro, SEMPRE sai na frente.</p>
+        <p class="highlight">Se você não está automatizando, você está ficando para trás.</p>
+        <p>Seus concorrentes já estão estudando IA neste momento.</p>
+        <p class="highlight">Não aceite o comum; lidere o futuro!</p>
+        <div class="cta-center">
+            <a href="#section11" class="btn primary-btn">Quero ser pioneiro com IA</a>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 10 - FAQ -->
+<section id="section10" class="faq-section">
+    <div class="container">
+        <h2>FAQ - APEX Soluções Digitais</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>O que são Automações com IA?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Automações com Inteligência Artificial são sistemas que executam tarefas repetitivas, processos complexos e análises automaticamente, melhorando continuamente com base nos dados que recebem.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como a IA pode melhorar a tomada de decisão estratégica?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A IA fornece insights valiosos e relatórios detalhados sobre o mercado, concorrência e comportamento do público, permitindo identificar oportunidades e riscos de forma mais precisa.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quais são os benefícios econômicos de usar a IA?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A IA reduz custos operacionais ao minimizar tarefas manuais, permite operações 24/7 e otimiza o tempo, possibilitando que sua equipe foque no crescimento da empresa.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como funciona a comunicação integrada e omnichannel?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Com nossa solução, todos os canais de comunicação (WhatsApp, E-mail, Chat, Redes Sociais) são unificados e centralizados no CRM, oferecendo um histórico completo e personalizado aos clientes.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como a IA melhora a experiência do cliente?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A IA possibilita atendimento rápido e personalizado 24/7 com chatbots inteligentes e comunicação automatizada em todos os canais, além de gerar conteúdo personalizado conforme a necessidade do cliente.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Que tipos de soluções a Apex oferece?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <ul>
+                        <li>Web Scraping</li>
+                        <li>Atendimento Multicanal</li>
+                        <li>Relatórios automatizados</li>
+                        <li>Integração com CRM</li>
+                        <li>RAG (Retrieval-Augmented Generation)</li>
+                        <li>Geração de Conteúdo</li>
+                        <li>Processamento e preenchimento de documentos</li>
+                        <li>Transcrição e resumos de reuniões</li>
+                        <li>E muito mais</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Por que devo considerar adotar IA agora?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Adotar IA não é mais uma opção, é uma necessidade vital para a sobrevivência no mercado. As empresas que integram IA rapidamente garantem uma vantagem competitiva crucial. Não ser um dos primeiros significa, inevitavelmente, ficar para trás. Seus concorrentes já estão usando IA para inovar e dominar. Não perca tempo; a hora de agir é agora!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como posso começar?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Preencha o nosso formulário de contato com suas informações para que possamos estudar e oferecer a melhor solução para sua empresa.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-contact">
+            <p>Se você tiver outras perguntas ou precisar de mais informações, entre em contato conosco! A Apex Soluções Digitais está pronta para ajudar na evolução do seu negócio.</p>
+            <a href="#section11" class="btn primary-btn">Entre em contato</a>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 11 - Contato -->
+<section id="section11" class="contact-section">
+    <div class="container">
+        <h2>Vamos conversar?</h2>
+        <p>Preencha o formulário e entraremos em contato para estudarmos juntos a melhor solução para a sua empresa!</p>
+        
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="https://images.unsplash.com/photo-1552581234-26160f608093" alt="Entre em contato" loading="lazy">
+            </div>
+            <div class="contact-form">
+                <?php get_template_part('template-parts/form', 'contact'); ?>
+            </div>
+        </div>
+    </div>
+</section>
