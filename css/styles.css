@@ -215,14 +215,16 @@ nav {
 }
 
 .header .cta-button a {
-    background-color: transparent;
+    background-color: var(--light);
     color: var(--primary);
-    border: 2px solid var(--primary);
+    border: 2px solid var(--light);
+    font-weight: 700;
 }
 
 .header .cta-button a:hover {
-    background-color: var(--primary);
+    background-color: transparent;
     color: var(--light);
+    border: 2px solid var(--light);
 }
 
 .menu-toggle {
@@ -309,16 +311,21 @@ section {
 }
 
 .value-proposition .btn {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease;
+    background-color: var(--accent);
+    color: var(--light);
+    border: none;
+    letter-spacing: 1px;
 }
 
 .value-proposition .btn:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--tertiary);
 }
 
 .card-container {
@@ -362,10 +369,11 @@ section {
 .highlight-box {
     background-color: var(--primary);
     color: var(--light);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 10px;
     text-align: center;
     margin-top: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .highlight-box h3 {
@@ -396,16 +404,21 @@ section {
 }
 
 .customer-experience .btn {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease;
+    background-color: var(--accent);
+    color: var(--light);
+    border: none;
+    letter-spacing: 1px;
 }
 
 .customer-experience .btn:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--tertiary);
 }
 
 .section-intro {
