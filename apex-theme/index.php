@@ -71,6 +71,14 @@ function language_attributes() {
     echo 'lang="pt-BR"';
 }
 
+function has_custom_logo() {
+    return false; // Always false for demo
+}
+
+function the_custom_logo() {
+    echo '<!-- Simulated custom logo -->';
+}
+
 function wp_nav_menu($args) {
     echo '<ul class="nav-links">';
     echo '<li><a href="#section2">Automações com IA</a></li>';
